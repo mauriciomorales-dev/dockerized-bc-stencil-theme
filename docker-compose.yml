@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  stencil-theme:
+    build:
+      context: .
+      dockerfile: dockerfile
+    volumes:
+      - ./theme:/theme
+    working_dir: /theme
+    tty: true # Keeps the container running for interactive use
