@@ -77,6 +77,6 @@ project-root/
 ```
 
 ### Notes
-The theme folder in this repository is mounted to /theme inside the container, ensuring changes in the host are reflected in the container.
+The theme folder in this repository is mounted to /theme inside the container, ensuring changes in the host are reflected in the container. Keep /theme/.gitignore to ensure that the theme files are not copied to the repository.
 You can modify dockerfile or docker-compose.yml to include additional tools or configurations as required.
 Always make sure your theme/package.json is correctly configured to avoid dependency issues.
